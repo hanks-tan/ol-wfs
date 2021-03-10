@@ -1,0 +1,40 @@
+.container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: flex;
+}
+.left{
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    display: inline;
+}
+.right{
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+    display: inline;
+}
+.map{
+    height: 100%;
+    width: 100%;
+}
+.inner{
+    margin: 10px;
+}
+.modeSeleter{
+    margin: 10px 0;
+}
+.dataContainer{
+    height: 500px;
+}
+.textContent{
+    width: 90%;
+    height: 100%;
+}
+.btng{
+    margin: 10px 0;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <title>openlayers结合wsf服务进行增删改操作</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="map" id="map"></div>
+        </div>
+        <div class="right">
+            <div class="inner">
+                <div class="modeSeleter">
+                    <label><input type="radio" name="mode" id="" onclick="changeMode('add')">添加</label>
+                    <label><input type="radio" name="mode" id="" onclick="changeMode('modify')">修改</label>
+                </div>
+                <div class="dataContainer">
+                    <textarea class="textContent" name="geometry" id="textarea" readonly="readonly"></textarea>
+                </div>
+                <div class="btng">
+                    <button onclick="saveHandle()">保存</button>
+                    <button onclick="delHandle()">删除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
